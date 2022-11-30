@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Calcontrol</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="title_food">Food</string>
+    <string name="title_training">Training</string>
+    <string name="title_dashboard">Dashboard</string>
+</resources>

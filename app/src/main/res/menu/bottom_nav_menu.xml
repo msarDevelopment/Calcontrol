@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_nav_menu_item_home"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/bottom_nav_menu_item_food"
+        android:icon="@drawable/ic_food"
+        android:title="@string/title_food" />
+
+    <item
+        android:id="@+id/bottom_nav_menu_item_training"
+        android:icon="@drawable/ic_training"
+        android:title="@string/title_training" />
+
+</menu>

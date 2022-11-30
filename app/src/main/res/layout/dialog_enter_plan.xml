@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etNewPlanName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNewPlanWeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Weight:"
+        app:layout_constraintBottom_toBottomOf="@+id/npNewPlanWeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/npNewPlanWeight" />
+
+    <NumberPicker
+        android:id="@+id/npNewPlanWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvNewPlanWeight"
+        app:layout_constraintTop_toBottomOf="@+id/etNewPlanName" />
+
+    <TextView
+        android:id="@+id/tvNewPlanHeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Height:"
+        app:layout_constraintBottom_toBottomOf="@+id/npNewPlanHeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/npNewPlanHeight" />
+
+    <NumberPicker
+        android:id="@+id/npNewPlanHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvNewPlanHeight"
+        app:layout_constraintTop_toBottomOf="@+id/npNewPlanWeight" />
+
+    <TextView
+        android:id="@+id/tvNewPlanAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Age:"
+        app:layout_constraintBottom_toBottomOf="@+id/npNewPlanAge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/npNewPlanAge" />
+
+    <NumberPicker
+        android:id="@+id/npNewPlanAge"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvNewPlanAge"
+        app:layout_constraintTop_toBottomOf="@+id/npNewPlanHeight" />
+
+
+    <TextView
+        android:id="@+id/tvNewPlanGender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Gender:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/npNewPlanAge" />
+
+
+    <RadioGroup
+        android:id="@+id/rdgGender"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/tvNewPlanGender"
+        app:layout_constraintStart_toStartOf="parent"
+        android:checkedButton="@id/rdoMale">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdoMale"
+        android:text="Male"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdoFemale"
+        android:text="Female"/>
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
